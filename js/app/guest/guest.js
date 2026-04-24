@@ -255,11 +255,12 @@ export const guest = (() => {
         const url = new URL('https://calendar.google.com/calendar/render');
         const data = new URLSearchParams({
             action: 'TEMPLATE',
-            text: 'The Wedding of Wahyu and Riski',
-            dates: `${formatDate('2023-03-15 10:00')}/${formatDate('2023-03-15 11:00')}`,
-            details: 'Tanpa mengurangi rasa hormat, kami mengundang Anda untuk berkenan menghadiri acara pernikahan kami. Terima kasih atas perhatian dan doa restu Anda, yang menjadi kebahagiaan serta kehormatan besar bagi kami.',
-            location: 'RT 10 RW 02, Desa Pajerukan, Kec. Kalibagor, Kab. Banyumas, Jawa Tengah 53191.',
-            ctz: config.get('tz'),
+            text: 'The Wedding of Shahd and Ahmed',
+            // dates: `${formatDate('2023-03-15 10:00')}/${formatDate('2023-03-15 11:00')}`,
+            dates: `${formatDate('2026-05-15 10:00')}/${formatDate('2026-05-15 11:00')}`,
+            Details: "With all due respect, we invite you to attend our wedding ceremony. We thank you for your interest and invitations, which are a great source of happiness and honor for us.",
+            location:"Abd El-Moneim Riad MosqueDana Al Gadidah WA Izbat Al Westaneyah, El Raml 2, Alexandria Governorate",
+            locationUrl: 'https://share.google/B3GvVnIgwaM8ygfs1',
         });
 
         url.search = data.toString();
